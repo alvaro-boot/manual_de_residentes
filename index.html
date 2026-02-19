@@ -1,0 +1,863 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=5.0, user-scalable=yes">
+    <meta name="mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <title>Manual de Usuario - Cootravir PH</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body>
+    <!-- Barra de navegación lateral -->
+    <nav class="sidebar" id="sidebar">
+        <div class="sidebar-header">
+            <div class="sidebar-brand">
+                <img src="imagenes/logos/fondo-login (1).png" alt="Logo Cootravir" class="company-logo">
+                <div class="brand-text">
+                    <span class="company-name">COOTRAVIR C.T.A.</span>
+                    <span class="company-tagline">SEGURIDAD PRIVADA</span>
+                </div>
+            </div>
+            <h2 class="manual-title">Manual de Usuario</h2>
+            <p class="version">Versión 3.5.5</p>
+        </div>
+        <ul class="nav-menu">
+            <li><a href="#inicio" class="nav-link active"><i class="fas fa-home"></i> <span>Inicio</span></a></li>
+            <li><a href="#acceso" class="nav-link"><i class="fas fa-sign-in-alt"></i> <span>1. Acceso al Sistema</span></a></li>
+            <li><a href="#zonas-sociales" class="nav-link"><i class="fas fa-calendar-check"></i> <span>2. Zonas Sociales</span></a></li>
+            <li><a href="#autorizaciones" class="nav-link"><i class="fas fa-user-check"></i> <span>3. Autorizaciones</span></a></li>
+            <li><a href="#comunicacion" class="nav-link"><i class="fas fa-comments"></i> <span>4. Comunicación</span></a></li>
+        </ul>
+        <div class="sidebar-footer">
+            <p><i class="fas fa-info-circle"></i> Soporte técnico disponible</p>
+        </div>
+        <button class="toggle-sidebar" id="toggleSidebar"><i class="fas fa-bars"></i></button>
+    </nav>
+
+    <!-- Botón de scroll hacia arriba -->
+    <button class="scroll-top" id="scrollTop" title="Volver arriba">
+        <i class="fas fa-arrow-up"></i>
+    </button>
+
+    <!-- Contenido principal -->
+    <main class="main-content">
+        <!-- Portada -->
+        <section id="inicio" class="section hero">
+            <div class="hero-background"></div>
+            <div class="container">
+                <div class="hero-content">
+                    <div class="hero-logo">
+                        <img src="imagenes/logos/LogoCootravir_uso3-LB.png" alt="Logo Cootravir" class="hero-company-logo">
+                    </div>
+                    <h1>MANUAL DE USUARIO</h1>
+                    <h2>APP COOTRAVIR C.T.A.</h2>
+                    <p class="subtitle">Propiedad Horizontal</p>
+                    <p class="version-badge"><i class="fas fa-tag"></i> Versión 3.5.5</p>
+                    <div class="hero-description">
+                        <p>Bienvenido al manual de usuario de la aplicación <strong>Cootravir PH</strong>. Este manual le guiará paso a paso para utilizar todas las funcionalidades disponibles en la plataforma de manera eficiente y sencilla.</p>
+                    </div>
+                    <div class="hero-features">
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Guía completa</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Paso a paso</span>
+                        </div>
+                        <div class="feature-item">
+                            <i class="fas fa-check-circle"></i>
+                            <span>Fácil de seguir</span>
+                        </div>
+                    </div>
+                    <a href="#acceso" class="cta-button">
+                        <span>Comenzar</span>
+                        <i class="fas fa-arrow-down"></i>
+                    </a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 1: Acceso al Sistema -->
+        <section id="acceso" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-key"></i>
+                    </div>
+                    <h2 class="section-title">1. ACCESO AL SISTEMA</h2>
+                    <p class="section-description">Aprenda cómo ingresar a la aplicación y recuperar su contraseña si la olvida</p>
+                </div>
+                
+                <div class="card card-featured">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-sign-in-alt"></i>
+                        </div>
+                        <h3 class="card-title">Inicio de Sesión</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Para ingresar por primera vez o tras un restablecimiento de contraseña, siga estos pasos:</p>
+                        
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-id-card"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Identidad</h4>
+                                    <p>Su número de documento de identidad (sin puntos, comas, espacios ni guiones)</p>
+                                    <div class="example-box">
+                                        <strong>Ejemplo:</strong> Si su documento es 1.234.567-8, ingrese: <code>12345678</code>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-lock"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Contraseña</h4>
+                                    <p>Su mismo número de documento (utilice el mismo formato sin caracteres especiales)</p>
+                                    <div class="example-box">
+                                        <strong>Ejemplo:</strong> Si su documento es 1.234.567-8, ingrese: <code>12345678</code>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <div class="warning-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="warning-content">
+                                <strong>⚠️ IMPORTANTE:</strong> 
+                                <ul>
+                                    <li>Ingrese los números <strong>sin puntos</strong></li>
+                                    <li>Ingrese los números <strong>sin comas</strong></li>
+                                    <li>Ingrese los números <strong>sin espacios</strong></li>
+                                    <li>Ingrese los números <strong>sin guiones</strong></li>
+                                </ul>
+                                <p class="warning-note">El sistema es sensible a estos caracteres y no reconocerá su documento si los incluye.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.31 AM (1).jpeg" 
+                                     alt="Pantalla de inicio de sesión" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Pantalla de inicio de sesión con campos Identidad e Ingresar
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>💡 Consejo:</strong> Si tiene problemas para ingresar, verifique que no haya espacios antes o después del número de documento. Puede copiar y pegar el número desde un documento si es necesario.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-key"></i>
+                        </div>
+                        <h3 class="card-title">Recuperación de Contraseña</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Si olvidó su contraseña o los datos de acceso no funcionan, puede recuperarla fácilmente:</p>
+                        
+                        <div class="steps-container">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Acceder a recuperación</h4>
+                                    <p>En la pantalla de inicio de sesión, toque el enlace <strong>"Olvidé mi contraseña"</strong> que se encuentra debajo del botón de ingresar.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Ingresar datos</h4>
+                                    <p>Complete el formulario con:</p>
+                                    <ul class="nested-list">
+                                        <li><strong>Número de documento:</strong> Su documento de identidad (sin caracteres especiales)</li>
+                                        <li><strong>Correo electrónico:</strong> El correo que registró en el sistema</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Recibir nueva contraseña</h4>
+                                    <p>El sistema enviará automáticamente una nueva contraseña directamente a su correo electrónico registrado. Revise su bandeja de entrada y también la carpeta de spam.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Ingresar con nueva contraseña</h4>
+                                    <p>Una vez recibida la contraseña por correo, utilícela para ingresar al sistema. Se recomienda cambiarla después del primer acceso por seguridad.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-info-circle"></i>
+                            </div>
+                            <div class="info-content-box">
+                                <strong>💡 Nota importante:</strong> 
+                                <p>Si el sistema no reconoce su correo electrónico o no recibe el mensaje de recuperación, comuníquese con la Administración de la propiedad horizontal para que puedan verificar y actualizar sus datos de contacto.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.32 AM.jpeg" 
+                                     alt="Recuperación de contraseña" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Pantalla de recuperación de contraseña con botón "Restaurar contraseña"
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 2: Zonas Sociales -->
+        <section id="zonas-sociales" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h2 class="section-title">2. GESTIÓN DE ZONAS SOCIALES Y RESERVAS</h2>
+                    <p class="section-description">Reserve espacios comunes como canchas, salones, gimnasios y más</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-th-large"></i>
+                        </div>
+                        <h3 class="card-title">Menú Principal</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">El menú principal es su centro de control para acceder a todos los servicios disponibles en la aplicación:</p>
+                        <ul class="feature-list">
+                            <li><i class="fas fa-check"></i> <strong>Zonas Sociales:</strong> Reserva de espacios comunes</li>
+                            <li><i class="fas fa-check"></i> <strong>PQRS:</strong> Peticiones, quejas, reclamos y sugerencias</li>
+                            <li><i class="fas fa-check"></i> <strong>Autorizaciones:</strong> Gestión de visitantes</li>
+                            <li><i class="fas fa-check"></i> <strong>Mensajes:</strong> Comunicación con administración</li>
+                            <li><i class="fas fa-check"></i> <strong>Documentos:</strong> Reglamentos y actas</li>
+                        </ul>
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.32 AM (1).jpeg" 
+                                     alt="Menú principal" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Menú principal con todos los iconos: Zonas Sociales, PQRS, Autorizaciones, etc.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-calendar-check"></i>
+                        </div>
+                        <h3 class="card-title">¿Cómo reservar un espacio?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Siga estos pasos detallados para realizar una reserva exitosa:</p>
+                        
+                        <div class="steps-container">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Acceder al módulo</h4>
+                                    <p>Desde el menú principal, toque el icono de <strong>"Zonas Sociales"</strong>. Se abrirá una lista con todos los espacios disponibles para reservar.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Seleccionar el área</h4>
+                                    <p>Elija el espacio que desea reservar de la lista disponible. Ejemplos comunes incluyen:</p>
+                                    <div class="examples-grid">
+                                        <div class="example-tag"><i class="fas fa-futbol"></i> Cancha</div>
+                                        <div class="example-tag"><i class="fas fa-fire"></i> BBQ</div>
+                                        <div class="example-tag"><i class="fas fa-dumbbell"></i> Gimnasio</div>
+                                        <div class="example-tag"><i class="fas fa-swimming-pool"></i> Piscina</div>
+                                        <div class="example-tag"><i class="fas fa-users"></i> Salón Social</div>
+                                        <div class="example-tag"><i class="fas fa-gamepad"></i> Zona de Juegos</div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Seleccionar el día</h4>
+                                    <p>Se mostrará un calendario con los días disponibles. Los días habilitados aparecerán destacados y podrá seleccionarlos. Los días no disponibles aparecerán en gris y no serán seleccionables.</p>
+                                    <div class="tip-box small">
+                                        <i class="fas fa-lightbulb"></i>
+                                        <span>Los días disponibles dependen de las políticas de reserva establecidas por la administración.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Seleccionar el turno</h4>
+                                    <p>Una vez seleccionado el día, se cargarán los lapsos de tiempo disponibles para ese día. Cada turno mostrará:</p>
+                                    <ul class="nested-list">
+                                        <li>Hora de inicio y fin</li>
+                                        <li>Disponibilidad (disponible o ocupado)</li>
+                                        <li>Un símbolo <strong>(+)</strong> para reservar</li>
+                                    </ul>
+                                    <p>Toque el símbolo <strong>(+)</strong> en el horario que desee reservar para confirmar su selección.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Confirmar reserva</h4>
+                                    <p>Revise los detalles de su reserva y confirme. Recibirá una notificación indicando que su solicitud está <strong>"Pendiente"</strong> hasta que sea aprobada por la administración.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="info-content-box">
+                                <strong>⏰ Tiempo de respuesta:</strong> 
+                                <p>Las reservas generalmente son aprobadas en un plazo de 24 a 48 horas hábiles. Recibirá una notificación cuando su reserva sea aprobada o rechazada.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-list-alt"></i>
+                        </div>
+                        <h3 class="card-title">¿Cómo ver mis reservas?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Para consultar el estado de sus reservas:</p>
+                        <ol class="step-list">
+                            <li>Acceda al módulo <strong>"Mis Reservas"</strong> desde el menú principal.</li>
+                            <li>Se mostrará un listado completo de todas sus reservas, tanto pasadas como futuras.</li>
+                            <li>Cada reserva mostrará la siguiente información:
+                                <ul class="nested-list">
+                                    <li><strong>Espacio reservado:</strong> Nombre del área (Cancha, BBQ, etc.)</li>
+                                    <li><strong>Fecha y hora:</strong> Día y turno reservado</li>
+                                    <li><strong>Estado:</strong> 
+                                        <span class="status-badge status-pending">Pendiente</span> o 
+                                        <span class="status-badge status-approved">Aprobada</span> o 
+                                        <span class="status-badge status-rejected">Rechazada</span>
+                                    </li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <div class="status-explanation">
+                            <h4>Estados de reserva:</h4>
+                            <div class="status-item">
+                                <span class="status-badge status-pending">Pendiente</span>
+                                <p>Su solicitud está siendo revisada por la administración</p>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-badge status-approved">Aprobada</span>
+                                <p>Su reserva ha sido confirmada y el espacio está disponible para usted</p>
+                            </div>
+                            <div class="status-item">
+                                <span class="status-badge status-rejected">Rechazada</span>
+                                <p>Su solicitud no pudo ser aprobada (generalmente por conflictos de horario o políticas)</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 3: Autorizaciones -->
+        <section id="autorizaciones" class="section">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-user-shield"></i>
+                    </div>
+                    <h2 class="section-title">3. AUTORIZACIÓN DE VISITANTES Y PARQUEADERO</h2>
+                    <p class="section-description">Gestione las autorizaciones de ingreso para sus visitantes y controle el uso de parqueadero</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-user-plus"></i>
+                        </div>
+                        <h3 class="card-title">Registrar un Invitado</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Para autorizar el ingreso de un visitante a la propiedad, siga estos pasos detallados:</p>
+                        
+                        <div class="steps-container">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Acceder a Autorizaciones</h4>
+                                    <p>Desde el menú principal, toque el icono de <strong>"Autorizaciones"</strong>. Se mostrará una lista de todas sus autorizaciones activas y pasadas.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Crear nueva autorización</h4>
+                                    <p>En la esquina superior derecha de la pantalla, encontrará un botón con el símbolo <strong>(+)</strong>. Toque este botón para crear una nueva autorización.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Completar información del visitante</h4>
+                                    <p>Se abrirá un formulario donde debe completar los siguientes campos obligatorios:</p>
+                                    <div class="form-fields">
+                                        <div class="field-item">
+                                            <i class="fas fa-id-card"></i>
+                                            <div>
+                                                <strong>Identificación:</strong> Número de documento del visitante (sin caracteres especiales)
+                                            </div>
+                                        </div>
+                                        <div class="field-item">
+                                            <i class="fas fa-user"></i>
+                                            <div>
+                                                <strong>Nombre:</strong> Nombre completo del visitante
+                                            </div>
+                                        </div>
+                                        <div class="field-item">
+                                            <i class="fas fa-tag"></i>
+                                            <div>
+                                                <strong>Tipo de Persona:</strong> Seleccione de las opciones disponibles (Amigo, Familiar, Proveedor, etc.)
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Registrar vehículo (opcional)</h4>
+                                    <p>Si el visitante llegará en vehículo propio:</p>
+                                    <ul class="nested-list">
+                                        <li>Active la opción de <strong>"Vehículo"</strong></li>
+                                        <li>Ingrese la <strong>placa</strong> del vehículo (sin espacios ni guiones)</li>
+                                        <li>El sistema asignará automáticamente un espacio de parqueadero disponible</li>
+                                    </ul>
+                                    <div class="tip-box small">
+                                        <i class="fas fa-car"></i>
+                                        <span>El registro de la placa es importante para que el visitante pueda ingresar al parqueadero sin inconvenientes.</span>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Confirmar autorización</h4>
+                                    <p>Revise toda la información ingresada y toque el botón <strong>"Autorizar"</strong> o <strong>"Guardar"</strong> para confirmar la autorización.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="warning-box">
+                            <div class="warning-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="warning-content">
+                                <strong>⚠️ Recordatorio importante:</strong>
+                                <p>Todo visitante debe ser registrado con anticipación. El uso de esta aplicación implica la aceptación de las normas para visitantes contenidas en el Manual de Convivencia de la Propiedad Horizontal.</p>
+                            </div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.32 AM (3).jpeg" 
+                                     alt="Formulario de autorización" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Formulario "Autorizar Ingreso" con todos los campos necesarios
+                            </p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card card-featured">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-qrcode"></i>
+                        </div>
+                        <h3 class="card-title">Generar y Compartir Código QR</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Una vez registrado el visitante, puede generar un código QR que facilitará su ingreso a la propiedad:</p>
+                        
+                        <div class="steps-container">
+                            <div class="step-item">
+                                <div class="step-number">1</div>
+                                <div class="step-content">
+                                    <h4>Localizar la autorización</h4>
+                                    <p>En el listado de autorizaciones, busque el visitante para el cual desea generar el código QR. Cada autorización muestra la información del visitante y un botón de acción.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">2</div>
+                                <div class="step-content">
+                                    <h4>Generar el código QR</h4>
+                                    <p>Toque el botón <strong>"Generar QR para el ingreso"</strong> que aparece en la tarjeta de cada autorización. Este botón generalmente tiene un icono de código QR.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">3</div>
+                                <div class="step-content">
+                                    <h4>Visualizar el código QR</h4>
+                                    <p>Se mostrará una pantalla con el código QR generado. Este código contiene toda la información necesaria para que el visitante pueda ingresar a la propiedad.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">4</div>
+                                <div class="step-content">
+                                    <h4>Compartir el código QR</h4>
+                                    <p>Use el botón <strong>"Compartir QR"</strong> para enviarlo por WhatsApp, correo electrónico o cualquier otra aplicación de mensajería. El visitante debe presentar este código en portería al momento de ingresar.</p>
+                                </div>
+                            </div>
+                            <div class="step-item">
+                                <div class="step-number">5</div>
+                                <div class="step-content">
+                                    <h4>Presentar en portería</h4>
+                                    <p>El visitante debe mostrar el código QR al personal de portería, quienes lo escanearán para verificar la autorización y permitir el ingreso.</p>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.32 AM (4).jpeg" 
+                                     alt="Lista de autorizaciones con botón Generar QR" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Lista de autorizaciones mostrando el botón "Generar QR para el ingreso del visitante"
+                            </p>
+                        </div>
+
+                        <div class="image-container">
+                            <div class="image-wrapper">
+                                <img src="imagenes/WhatsApp Image 2026-02-16 at 9.31.32 AM (5).jpeg" 
+                                     alt="Código QR generado" 
+                                     class="manual-image"
+                                     onclick="openModal(this.src, this.alt)">
+                                <div class="image-overlay">
+                                    <i class="fas fa-search-plus"></i>
+                                    <span>Haga clic para ampliar</span>
+                                </div>
+                            </div>
+                            <p class="image-caption">
+                                <i class="fas fa-info-circle"></i>
+                                Código QR generado listo para compartir con el visitante
+                            </p>
+                        </div>
+
+                        <div class="tip-box">
+                            <div class="tip-icon">
+                                <i class="fas fa-lightbulb"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>💡 Consejos útiles:</strong>
+                                <ul>
+                                    <li>El código QR tiene validez según la fecha y hora de la autorización</li>
+                                    <li>Puede generar múltiples códigos QR para el mismo visitante si es necesario</li>
+                                    <li>Guarde una captura de pantalla del código QR como respaldo</li>
+                                    <li>Comparta el código QR con suficiente anticipación para que el visitante lo tenga listo</li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-parking"></i>
+                        </div>
+                        <h3 class="card-title">¿Dónde se parqueó mi visita?</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Para consultar la ubicación del vehículo de su visitante:</p>
+                        <ol class="step-list">
+                            <li>Acceda al módulo <strong>"Uso de Parqueadero"</strong> desde el menú principal.</li>
+                            <li>Se mostrará un listado de todos los vehículos registrados y sus ubicaciones actuales.</li>
+                            <li>Busque la placa del vehículo de su visitante en la lista.</li>
+                            <li>La información mostrará:
+                                <ul class="nested-list">
+                                    <li><strong>Placa del vehículo:</strong> Identificación del automotor</li>
+                                    <li><strong>Número de celda:</strong> Ubicación exacta en el parqueadero</li>
+                                    <li><strong>Visitante asociado:</strong> Nombre de la persona autorizada</li>
+                                    <li><strong>Hora de ingreso:</strong> Cuándo ingresó al parqueadero</li>
+                                </ul>
+                            </li>
+                        </ol>
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="info-content-box">
+                                <strong>📍 Información de ubicación:</strong>
+                                <p>El número de celda corresponde a la ubicación física exacta donde quedó estacionado el vehículo. Esta información es útil si necesita indicarle al visitante dónde dejó su vehículo o si hay algún inconveniente.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección 4: Comunicación -->
+        <section id="comunicacion" class="section section-alt">
+            <div class="container">
+                <div class="section-header">
+                    <div class="section-icon">
+                        <i class="fas fa-comments"></i>
+                    </div>
+                    <h2 class="section-title">4. COMUNICACIÓN Y DOCUMENTOS</h2>
+                    <p class="section-description">Manténgase informado con mensajes, documentos y registros de vehículos</p>
+                </div>
+                
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <h3 class="card-title">Mensajes y Notificaciones</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">El módulo de mensajes le permite mantenerse informado sobre:</p>
+                        <div class="feature-grid">
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bell"></i>
+                                </div>
+                                <h4>Notificaciones de Portería</h4>
+                                <p>Reciba avisos importantes del personal de seguridad sobre eventos, mantenimientos o situaciones especiales en la propiedad.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-bullhorn"></i>
+                                </div>
+                                <h4>Comunicados de Administración</h4>
+                                <p>Manténgase al día con los anuncios oficiales, cambios en políticas, reuniones de copropietarios y otra información relevante.</p>
+                            </div>
+                            <div class="feature-card">
+                                <div class="feature-icon">
+                                    <i class="fas fa-check-circle"></i>
+                                </div>
+                                <h4>Estados de Solicitudes</h4>
+                                <p>Reciba notificaciones cuando sus reservas sean aprobadas, rechazadas o cuando haya actualizaciones en sus autorizaciones.</p>
+                            </div>
+                        </div>
+                        <div class="tip-box">
+                            <div class="tip-icon">
+                                <i class="fas fa-bell"></i>
+                            </div>
+                            <div class="tip-content">
+                                <strong>🔔 Recomendación:</strong> Revise regularmente sus mensajes para no perderse información importante. Las notificaciones importantes generalmente aparecen destacadas.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-file-alt"></i>
+                        </div>
+                        <h3 class="card-title">Documentos Internos</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Acceda a todos los documentos oficiales de la propiedad horizontal:</p>
+                        <div class="documents-list">
+                            <div class="document-item">
+                                <div class="document-icon">
+                                    <i class="fas fa-book"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h4>Reglamento de Propiedad Horizontal</h4>
+                                    <p>Documento que establece las normas y reglas generales de convivencia, uso de espacios comunes, y derechos y deberes de los copropietarios.</p>
+                                    <span class="document-badge">Documento oficial</span>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-icon">
+                                    <i class="fas fa-handshake"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h4>Manual de Convivencia</h4>
+                                    <p>Guía detallada sobre las normas de comportamiento, uso de instalaciones, horarios permitidos, y procedimientos para visitantes y residentes.</p>
+                                    <span class="document-badge">Documento oficial</span>
+                                </div>
+                            </div>
+                            <div class="document-item">
+                                <div class="document-icon">
+                                    <i class="fas fa-file-signature"></i>
+                                </div>
+                                <div class="document-content">
+                                    <h4>Actas de Asamblea</h4>
+                                    <p>Registro oficial de las decisiones tomadas en las reuniones de copropietarios, incluyendo cambios en políticas, aprobaciones de presupuestos, y elecciones.</p>
+                                    <span class="document-badge">Documento oficial</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-download"></i>
+                            </div>
+                            <div class="info-content-box">
+                                <strong>📥 Descarga de documentos:</strong>
+                                <p>La mayoría de los documentos están disponibles para descarga en formato PDF. Puede guardarlos en su dispositivo para consultarlos sin conexión a internet.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="card">
+                    <div class="card-header">
+                        <div class="card-icon">
+                            <i class="fas fa-car"></i>
+                        </div>
+                        <h3 class="card-title">Vehículos Registrados</h3>
+                    </div>
+                    <div class="card-body">
+                        <p class="intro-text">Consulte y gestione los vehículos asociados a su propiedad:</p>
+                        <div class="info-grid">
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-list"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Ver vehículos registrados</h4>
+                                    <p>En el módulo de vehículos podrá ver todos los automotores que tiene registrados asociados a su propiedad, incluyendo:</p>
+                                    <ul class="nested-list">
+                                        <li>Placa del vehículo</li>
+                                        <li>Marca y modelo</li>
+                                        <li>Color</li>
+                                        <li>Estado de registro</li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <div class="info-item">
+                                <div class="info-icon">
+                                    <i class="fas fa-plus-circle"></i>
+                                </div>
+                                <div class="info-content">
+                                    <h4>Registrar nuevo vehículo</h4>
+                                    <p>Si necesita registrar un nuevo vehículo, puede hacerlo desde esta sección completando el formulario correspondiente con los datos del automotor.</p>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="warning-box">
+                            <div class="warning-icon">
+                                <i class="fas fa-exclamation-triangle"></i>
+                            </div>
+                            <div class="warning-content">
+                                <strong>⚠️ Importante:</strong>
+                                <p>Los vehículos no registrados pueden tener problemas para ingresar al parqueadero. Asegúrese de mantener actualizada su información de vehículos.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Footer -->
+        <footer class="footer">
+            <div class="container">
+                <div class="footer-content">
+                    <div class="footer-section">
+                        <img src="imagenes/logos/LogoCootravir_uso3-LB.png" alt="Logo Cootravir" class="footer-logo">
+                        <h3>COOTRAVIR C.T.A.</h3>
+                        <p>Propiedad Horizontal</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Información</h4>
+                        <p>Versión 3.5.5</p>
+                        <p>Manual actualizado: Febrero 2026</p>
+                    </div>
+                    <div class="footer-section">
+                        <h4>Soporte</h4>
+                        <p>Para asistencia técnica, comuníquese con la administración</p>
+                    </div>
+                </div>
+                <div class="footer-bottom">
+                    <p>&copy; 2026 COOTRAVIR C.T.A. - Todos los derechos reservados</p>
+                </div>
+            </div>
+        </footer>
+    </main>
+
+    <!-- Modal para imágenes -->
+    <div id="imageModal" class="modal">
+        <span class="close-modal" onclick="closeModal()">&times;</span>
+        <img class="modal-content" id="modalImage">
+        <div class="modal-caption" id="modalCaption"></div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
