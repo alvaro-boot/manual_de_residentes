@@ -32,7 +32,17 @@
             <li><a href="#comunicacion" class="nav-link"><i class="fas fa-comments"></i> <span>4. Comunicación</span></a></li>
         </ul>
         <div class="sidebar-footer">
-            <p><i class="fas fa-info-circle"></i> Soporte técnico disponible</p>
+            <p><i class="fas fa-headset"></i> Soporte técnico</p>
+            <p class="contact-info">
+                <a href="tel:+573160171437" class="contact-link">
+                    <i class="fas fa-phone"></i> +57 316 017 1437
+                </a>
+            </p>
+            <p class="contact-info">
+                <a href="tel:+573176188685" class="contact-link">
+                    <i class="fas fa-phone"></i> +57 317 618 8685
+                </a>
+            </p>
         </div>
         <button class="toggle-sidebar" id="toggleSidebar"><i class="fas fa-bars"></i></button>
     </nav>
@@ -53,7 +63,7 @@
                         <img src="imagenes/logos/LogoCootravir_uso3-LB.png" alt="Logo Cootravir" class="hero-company-logo">
                     </div>
                     <h1>MANUAL DE USUARIO</h1>
-                    <h2>APP COOTRAVIR C.T.A.</h2>
+                    <h2>Cootravir PH</h2>
                     <p class="subtitle">Propiedad Horizontal</p>
                     <p class="version-badge"><i class="fas fa-tag"></i> Versión 3.5.5</p>
                     <div class="hero-description">
@@ -268,7 +278,7 @@
                         <h3 class="card-title">Menú Principal</h3>
                     </div>
                     <div class="card-body">
-                        <p class="intro-text">El menú principal es su centro de control para acceder a todos los servicios disponibles en la aplicación:</p>
+                        <p class="intro-text">En el menú principal podrá acceder a todos los servicios disponibles en la aplicación:</p>
                         <ul class="feature-list">
                             <li><i class="fas fa-check"></i> <strong>Zonas Sociales:</strong> Reserva de espacios comunes</li>
                             <li><i class="fas fa-check"></i> <strong>PQRS:</strong> Peticiones, quejas, reclamos y sugerencias</li>
@@ -310,7 +320,7 @@
                                 <div class="step-number">1</div>
                                 <div class="step-content">
                                     <h4>Acceder al módulo</h4>
-                                    <p>Desde el menú principal, toque el icono de <strong>"Zonas Sociales"</strong>. Se abrirá una lista con todos los espacios disponibles para reservar.</p>
+                                    <p>Desde el menú principal, toque el icono de <strong>"Zonas Sociales"</strong>. Se abrirá un menu con todos los espacios disponibles para reservar.</p>
                                 </div>
                             </div>
                             <div class="step-item">
@@ -332,7 +342,29 @@
                                 <div class="step-number">3</div>
                                 <div class="step-content">
                                     <h4>Seleccionar el día</h4>
-                                    <p>Se mostrará un calendario con los días disponibles. Los días habilitados aparecerán destacados y podrá seleccionarlos. Los días no disponibles aparecerán en gris y no serán seleccionables.</p>
+                                    <p>Se mostrará la pantalla <strong>"Realizar Reserva"</strong> con un calendario. En el calendario podrá distinguir:</p>
+                                    <ul class="nested-list">
+                                        <li><strong>Días en negro:</strong> son los días disponibles; puede seleccionarlos para ver los turnos.</li>
+                                        <li><strong>Días en gris:</strong> están deshabilitados y no se pueden seleccionar.</li>
+                                        <li><strong>Día seleccionado:</strong> el día elegido se resalta (por ejemplo en dorado) para indicar que está activo.</li>
+                                    </ul>
+                                    <p>Use las flechas <strong>&lt;</strong> y <strong>&gt;</strong> para cambiar de mes y toque el día que desee reservar.</p>
+                                    <div class="image-container">
+                                        <div class="image-wrapper">
+                                            <img src="imagenes/calendario_dias_de_reserva.png" 
+                                                 alt="Calendario de reserva: días disponibles y deshabilitados" 
+                                                 class="manual-image"
+                                                 onclick="openModal(this.src, this.alt)">
+                                            <div class="image-overlay">
+                                                <i class="fas fa-search-plus"></i>
+                                                <span>Haga clic para ampliar</span>
+                                            </div>
+                                        </div>
+                                        <p class="image-caption">
+                                            <i class="fas fa-info-circle"></i>
+                                            Calendario para elegir el día: días en negro = disponibles, días en gris = deshabilitados.
+                                        </p>
+                                    </div>
                                     <div class="tip-box small">
                                         <i class="fas fa-lightbulb"></i>
                                         <span>Los días disponibles dependen de las políticas de reserva establecidas por la administración.</span>
@@ -343,31 +375,56 @@
                                 <div class="step-number">4</div>
                                 <div class="step-content">
                                     <h4>Seleccionar el turno</h4>
-                                    <p>Una vez seleccionado el día, se cargarán los lapsos de tiempo disponibles para ese día. Cada turno mostrará:</p>
+                                    <p>Una vez seleccionado el día, se mostrará el <strong>"Listado de horas disponibles para la fecha seleccionada"</strong>. Este listado presenta todas las horas disponibles para ese día específico.</p>
+                                    <p>Cada hora disponible muestra:</p>
                                     <ul class="nested-list">
-                                        <li>Hora de inicio y fin</li>
-                                        <li>Disponibilidad (disponible o ocupado)</li>
-                                        <li>Un símbolo <strong>(+)</strong> para reservar</li>
+                                        <li><strong>Hora:</strong> El horario específico (por ejemplo: 10:00, 11:00, 12:00)</li>
+                                        <li><strong>Estado:</strong> Indica "Disponible" para cada turno libre</li>
+                                        <li><strong>Botón (+):</strong> Un círculo con el símbolo <strong>(+)</strong> a la derecha de cada hora</li>
                                     </ul>
-                                    <p>Toque el símbolo <strong>(+)</strong> en el horario que desee reservar para confirmar su selección.</p>
+                                    <div class="image-container">
+                                        <div class="image-wrapper">
+                                            <img src="imagenes/listado_horas_disponibles.png" 
+                                                 alt="Listado de horas disponibles para reserva" 
+                                                 class="manual-image"
+                                                 onclick="openModal(this.src, this.alt)">
+                                            <div class="image-overlay">
+                                                <i class="fas fa-search-plus"></i>
+                                                <span>Haga clic para ampliar</span>
+                                            </div>
+                                        </div>
+                                        <p class="image-caption">
+                                            <i class="fas fa-info-circle"></i>
+                                            Listado de horas disponibles: toque el botón (+) para apartar la hora deseada.
+                                        </p>
+                                    </div>
+                                    <div class="info-box">
+                                        <div class="info-icon-box">
+                                            <i class="fas fa-hand-pointer"></i>
+                                        </div>
+                                        <div class="info-content-box">
+                                            <strong>💡 Cómo reservar:</strong>
+                                            <p>Para apartar una hora, simplemente toque el botón circular con el símbolo <strong>(+)</strong> que aparece a la derecha de la hora que desea reservar. Esto confirmará su selección y procederá con la reserva.</p>
+                                        </div>
+                                    </div>
                                 </div>
                             </div>
                             <div class="step-item">
                                 <div class="step-number">5</div>
                                 <div class="step-content">
                                     <h4>Confirmar reserva</h4>
-                                    <p>Revise los detalles de su reserva y confirme. Recibirá una notificación indicando que su solicitud está <strong>"Pendiente"</strong> hasta que sea aprobada por la administración.</p>
+                                    <p>Revise los detalles de su reserva y confirme. Una vez confirmada, su reserva será <strong>aprobada automáticamente de inmediato</strong>. Recibirá una notificación confirmando que su reserva ha sido exitosa.</p>
                                 </div>
                             </div>
                         </div>
 
                         <div class="info-box">
                             <div class="info-icon-box">
-                                <i class="fas fa-clock"></i>
+                                <i class="fas fa-check-circle"></i>
                             </div>
                             <div class="info-content-box">
-                                <strong>⏰ Tiempo de respuesta:</strong> 
-                                <p>Las reservas generalmente son aprobadas en un plazo de 24 a 48 horas hábiles. Recibirá una notificación cuando su reserva sea aprobada o rechazada.</p>
+                                <strong>✅ Confirmación inmediata:</strong> 
+                                <p>Las reservas se aprueban automáticamente al momento de confirmarlas. No necesita esperar aprobación de la administración. Una vez completada la reserva, recibirá una confirmación inmediata y el espacio quedará reservado para usted.</p>
                             </div>
                         </div>
                     </div>
@@ -390,26 +447,18 @@
                                     <li><strong>Espacio reservado:</strong> Nombre del área (Cancha, BBQ, etc.)</li>
                                     <li><strong>Fecha y hora:</strong> Día y turno reservado</li>
                                     <li><strong>Estado:</strong> 
-                                        <span class="status-badge status-pending">Pendiente</span> o 
-                                        <span class="status-badge status-approved">Aprobada</span> o 
-                                        <span class="status-badge status-rejected">Rechazada</span>
+                                        <span class="status-badge status-approved">Aprobada</span> - Todas las reservas se aprueban automáticamente al confirmarlas
                                     </li>
                                 </ul>
                             </li>
                         </ol>
-                        <div class="status-explanation">
-                            <h4>Estados de reserva:</h4>
-                            <div class="status-item">
-                                <span class="status-badge status-pending">Pendiente</span>
-                                <p>Su solicitud está siendo revisada por la administración</p>
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-info-circle"></i>
                             </div>
-                            <div class="status-item">
-                                <span class="status-badge status-approved">Aprobada</span>
-                                <p>Su reserva ha sido confirmada y el espacio está disponible para usted</p>
-                            </div>
-                            <div class="status-item">
-                                <span class="status-badge status-rejected">Rechazada</span>
-                                <p>Su solicitud no pudo ser aprobada (generalmente por conflictos de horario o políticas)</p>
+                            <div class="info-content-box">
+                                <strong>ℹ️ Información importante:</strong>
+                                <p>Todas las reservas se aprueban automáticamente de inmediato al momento de confirmarlas. Una vez que complete el proceso de reserva, el espacio quedará reservado para usted en la fecha y hora seleccionadas. No necesita esperar ninguna aprobación adicional.</p>
                             </div>
                         </div>
                     </div>
@@ -500,7 +549,7 @@
                                 <div class="step-number">5</div>
                                 <div class="step-content">
                                     <h4>Confirmar autorización</h4>
-                                    <p>Revise toda la información ingresada y toque el botón <strong>"Autorizar"</strong> o <strong>"Guardar"</strong> para confirmar la autorización.</p>
+                                    <p>Revise toda la información ingresada y toque el botón <strong>"Registrar Autorizacion"</strong> para confirmar la autorización.</p>
                                 </div>
                             </div>
                         </div>
@@ -641,17 +690,15 @@
                         <h3 class="card-title">¿Dónde se parqueó mi visita?</h3>
                     </div>
                     <div class="card-body">
-                        <p class="intro-text">Para consultar la ubicación del vehículo de su visitante:</p>
+                        <p class="intro-text">Para consultar dónde parqueó su visitante, use la opción <strong>"Uso de parqueadero"</strong> en el sistema. Esta opción muestra únicamente:</p>
                         <ol class="step-list">
-                            <li>Acceda al módulo <strong>"Uso de Parqueadero"</strong> desde el menú principal.</li>
-                            <li>Se mostrará un listado de todos los vehículos registrados y sus ubicaciones actuales.</li>
-                            <li>Busque la placa del vehículo de su visitante en la lista.</li>
-                            <li>La información mostrará:
+                            <li>Acceda al módulo <strong>"Uso de parqueadero"</strong> desde el menú principal.</li>
+                            <li>Se mostrará la información de los vehículos de sus visitantes.</li>
+                            <li>Para cada registro, el sistema muestra solo tres datos:
                                 <ul class="nested-list">
-                                    <li><strong>Placa del vehículo:</strong> Identificación del automotor</li>
-                                    <li><strong>Número de celda:</strong> Ubicación exacta en el parqueadero</li>
-                                    <li><strong>Visitante asociado:</strong> Nombre de la persona autorizada</li>
-                                    <li><strong>Hora de ingreso:</strong> Cuándo ingresó al parqueadero</li>
+                                    <li><strong>Placa:</strong> La placa del vehículo de su visitante</li>
+                                    <li><strong>Ubicación:</strong> Dónde parqueó su visitante (celda o lugar exacto en el parqueadero)</li>
+                                    <li><strong>Hora de llegada:</strong> Cuándo ingresó al parqueadero</li>
                                 </ul>
                             </li>
                         </ol>
@@ -660,8 +707,8 @@
                                 <i class="fas fa-map-marker-alt"></i>
                             </div>
                             <div class="info-content-box">
-                                <strong>📍 Información de ubicación:</strong>
-                                <p>El número de celda corresponde a la ubicación física exacta donde quedó estacionado el vehículo. Esta información es útil si necesita indicarle al visitante dónde dejó su vehículo o si hay algún inconveniente.</p>
+                                <strong>📍 Información mostrada:</strong>
+                                <p>En <strong>Uso de parqueadero</strong> solo se muestra la placa, la ubicación donde parqueó su visitante y la hora de llegada. Con estos datos puede localizar el vehículo de su invitado en el parqueadero.</p>
                             </div>
                         </div>
                     </div>
@@ -703,13 +750,6 @@
                                 </div>
                                 <h4>Comunicados de Administración</h4>
                                 <p>Manténgase al día con los anuncios oficiales, cambios en políticas, reuniones de copropietarios y otra información relevante.</p>
-                            </div>
-                            <div class="feature-card">
-                                <div class="feature-icon">
-                                    <i class="fas fa-check-circle"></i>
-                                </div>
-                                <h4>Estados de Solicitudes</h4>
-                                <p>Reciba notificaciones cuando sus reservas sean aprobadas, rechazadas o cuando haya actualizaciones en sus autorizaciones.</p>
                             </div>
                         </div>
                         <div class="tip-box">
@@ -784,7 +824,7 @@
                         <h3 class="card-title">Vehículos Registrados</h3>
                     </div>
                     <div class="card-body">
-                        <p class="intro-text">Consulte y gestione los vehículos asociados a su propiedad:</p>
+                        <p class="intro-text">Consulte los vehículos asociados a su propiedad:</p>
                         <div class="info-grid">
                             <div class="info-item">
                                 <div class="info-icon">
@@ -792,7 +832,7 @@
                                 </div>
                                 <div class="info-content">
                                     <h4>Ver vehículos registrados</h4>
-                                    <p>En el módulo de vehículos podrá ver todos los automotores que tiene registrados asociados a su propiedad, incluyendo:</p>
+                                    <p>En el módulo de vehículos podrá consultar todos los automotores que tiene registrados asociados a su propiedad. La información mostrada incluye:</p>
                                     <ul class="nested-list">
                                         <li>Placa del vehículo</li>
                                         <li>Marca y modelo</li>
@@ -801,14 +841,14 @@
                                     </ul>
                                 </div>
                             </div>
-                            <div class="info-item">
-                                <div class="info-icon">
-                                    <i class="fas fa-plus-circle"></i>
-                                </div>
-                                <div class="info-content">
-                                    <h4>Registrar nuevo vehículo</h4>
-                                    <p>Si necesita registrar un nuevo vehículo, puede hacerlo desde esta sección completando el formulario correspondiente con los datos del automotor.</p>
-                                </div>
+                        </div>
+                        <div class="info-box">
+                            <div class="info-icon-box">
+                                <i class="fas fa-building"></i>
+                            </div>
+                            <div class="info-content-box">
+                                <strong>🏢 Registro de nuevos vehículos:</strong>
+                                <p>Los residentes <strong>no pueden registrar vehículos</strong> desde la aplicación. Para registrar un nuevo vehículo o actualizar la información de uno existente, debe <strong>acercarse a la oficina de administración</strong> con los documentos necesarios.</p>
                             </div>
                         </div>
                         <div class="warning-box">
@@ -817,7 +857,7 @@
                             </div>
                             <div class="warning-content">
                                 <strong>⚠️ Importante:</strong>
-                                <p>Los vehículos no registrados pueden tener problemas para ingresar al parqueadero. Asegúrese de mantener actualizada su información de vehículos.</p>
+                                <p>Los vehículos no registrados pueden tener problemas para ingresar al parqueadero. Asegúrese de mantener actualizada su información de vehículos registrándolos en la oficina de administración.</p>
                             </div>
                         </div>
                     </div>
@@ -831,8 +871,6 @@
                 <div class="footer-content">
                     <div class="footer-section">
                         <img src="imagenes/logos/LogoCootravir_uso3-LB.png" alt="Logo Cootravir" class="footer-logo">
-                        <h3>COOTRAVIR C.T.A.</h3>
-                        <p>Propiedad Horizontal</p>
                     </div>
                     <div class="footer-section">
                         <h4>Información</h4>
@@ -840,8 +878,18 @@
                         <p>Manual actualizado: Febrero 2026</p>
                     </div>
                     <div class="footer-section">
-                        <h4>Soporte</h4>
-                        <p>Para asistencia técnica, comuníquese con la administración</p>
+                        <h4>Soporte Técnico</h4>
+                        <p>Para asistencia con la aplicación <strong>Cootravir PH</strong>, contáctenos:</p>
+                        <div class="contact-list">
+                            <p class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+573160171437" class="contact-link">+57 316 017 1437</a>
+                            </p>
+                            <p class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <a href="tel:+573176188685" class="contact-link">+57 317 618 8685</a>
+                            </p>
+                        </div>
                     </div>
                 </div>
                 <div class="footer-bottom">
